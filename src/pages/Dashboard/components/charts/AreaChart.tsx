@@ -95,13 +95,13 @@ export default function EmployeeRetentionChart() {
               />
               <ReferenceLine x='22 Aug' stroke='white' strokeDasharray='3 3'>
                 <svg x='-6' y='0'>
-                  <circle cx='6' cy='0' r='4' fill='white' />
+                  <circle cx='6' cy='0' r='4' fill='black' />
                 </svg>
                 <svg x='-6' y='50%'>
-                  <circle cx='6' cy='0' r='4' fill='white' />
+                  <circle cx='6' cy='0' r='4' fill='black' />
                 </svg>
                 <svg x='-6' y='100%'>
-                  <circle cx='6' cy='0' r='4' fill='white' />
+                  <circle cx='6' cy='0' r='4' fill='black' />
                 </svg>
               </ReferenceLine>
               <Line
