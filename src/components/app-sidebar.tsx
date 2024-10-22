@@ -44,7 +44,7 @@ const footerItems = [
 
 export function AppSidebar() {
   return (
-    <Sidebar className='light:bg-black'>
+    <Sidebar className='bg-black'>
       <SidebarHeader className='mt-10 px-6'>
         <img src={Logo} alt='logo' className='h-8 w-8' />
       </SidebarHeader>
@@ -54,10 +54,10 @@ export function AppSidebar() {
           <SidebarGroupContent>
             <SidebarMenu>
               <SidebarMenuItem>
-                <SidebarMenuButton asChild className='py-6'>
+                <SidebarMenuButton asChild className='py-6 hover:bg-gray-900'>
                   <Link to='#'>
-                    <Plus />
-                    <span>Add Module</span>
+                    <Plus className='text-white' />
+                    <span className='text-white'>Add Module</span>
                   </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
@@ -72,11 +72,11 @@ export function AppSidebar() {
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton
                     asChild
-                    className='hover:border-r-4 hover:border-red-700 py-6'
+                    className='hover:border-r-4 hover:bg-gray-900 hover:border-red-700 py-6'
                   >
                     <Link to={item.url}>
-                      <item.icon />
-                      <span>{item.title}</span>
+                      <item.icon className='text-white' />
+                      <span className='text-white'>{item.title}</span>
                     </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -92,10 +92,13 @@ export function AppSidebar() {
             <SidebarMenu>
               {footerItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild className=' py-6'>
+                  <SidebarMenuButton
+                    asChild
+                    className=' py-6 hover:bg-gray-900'
+                  >
                     <Link to={item.url}>
-                      <item.icon />
-                      <span>{item.title}</span>
+                      <item.icon className='text-white' />
+                      <span className='text-white'>{item.title}</span>
                     </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -103,9 +106,12 @@ export function AppSidebar() {
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
-        <Button variant='outline' className='rounded-full'>
-          <StepBack />
-          <span>Close</span>
+        <Button
+          variant='outline'
+          className='rounded-full bg-gray-900 hover:bg-gray-900'
+        >
+          <StepBack className='text-white' />
+          <span className='text-white'>Close</span>
         </Button>
       </SidebarFooter>
     </Sidebar>

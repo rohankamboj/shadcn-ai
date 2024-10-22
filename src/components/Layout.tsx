@@ -6,7 +6,7 @@ import Header from './Header';
 
 const Layout = () => {
   return (
-    <SidebarProvider className='light:bg-black'>
+    <SidebarProvider className='bg-black'>
       <AppSidebar />
       <main className='flex flex-col w-full'>
         <Header />

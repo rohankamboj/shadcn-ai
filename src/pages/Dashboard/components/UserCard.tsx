@@ -22,7 +22,7 @@ export default function UserCard() {
           </div>
           <div className='text-xl font-bold'>85%</div>
           <Select defaultValue='this-month'>
-            <SelectTrigger className='p-0 h-6 dark:border-red-500  dark:bg-red-950 dark:text-red-200 rounded-full px-1 focus-visible:ring-0'>
+            <SelectTrigger className='p-0 h-6 border-red-500  bg-red-950 text-red-200 rounded-full px-1 outline-none ring-0 focus-visible:ring-0'>
               <SelectValue placeholder='Select period' />
             </SelectTrigger>
             <SelectContent className='bg-zinc-800 border-zinc-700 text-zinc-400'>
