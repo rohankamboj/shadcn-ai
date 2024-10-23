@@ -1,11 +1,12 @@
-import Dashboard from '@/pages/Dashboard';
+import Dashboard from '@/pages/dashboard';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import PageRoutes from '@/routes/PageRoutes';
-import Home from '@/pages/Home';
-import Login from '@/pages/Login';
+import Home from '@/pages/home';
+import Login from '@/pages/login';
 import Layout from './Layout';
 import ProtectedRoute from './auth/ProtectedRoute';
 import PublicRoute from './auth/PublicRoute';
+import Settings from '@/pages/settings';
 
 const RouterProvider = () => {
   return (
@@ -19,6 +20,7 @@ const RouterProvider = () => {
           <Route element={<Layout />}>
             <Route path={PageRoutes.home} element={<Home />} />
             <Route path={PageRoutes.dashboard} element={<Dashboard />} />
+            <Route path={PageRoutes.settings} element={<Settings />} />
           </Route>
         </Route>
       </Routes>

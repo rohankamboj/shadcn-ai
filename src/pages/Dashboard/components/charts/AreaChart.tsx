@@ -1,5 +1,3 @@
-'use client';
-
 import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -29,7 +27,7 @@ const data = [
 ];
 
 export default function EmployeeRetentionChart() {
-  const [dateRange, setDateRange] = useState('Aug,20 → Present');
+  const [dateRange] = useState('Aug,20 → Present');
 
   return (
     <Card className='w-full max-w-3xl bg-[#1c1c1c] text-white'>

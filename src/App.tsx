@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+// import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
 import RouterProvider from './components/RouterProvider';
 // import { ThemeProvider } from './components/theme-provider';
@@ -14,7 +14,7 @@ function App() {
       {/* <ThemeProvider defaultTheme='light' storageKey='vite-ui-theme'> */}
       <RouterProvider />
       {/* </ThemeProvider> */}
-      <ReactQueryDevtools initialIsOpen={false} />
+      {/* <ReactQueryDevtools initialIsOpen={false} /> */}
     </QueryClientProvider>
   );
 }

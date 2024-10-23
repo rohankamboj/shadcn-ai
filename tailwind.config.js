@@ -10,6 +10,11 @@ export default {
         sm: 'calc(var(--radius) - 4px)',
       },
       colors: {
+        primary: 'hsl(var(--primary))',
+        secondary: 'hsl(var(--secondary))',
+        border: {
+          primary: 'hsl(var(--border-primary))',
+        },
         sidebar: {
           DEFAULT: 'hsl(var(--sidebar-background))',
           foreground: 'hsl(var(--sidebar-foreground))',

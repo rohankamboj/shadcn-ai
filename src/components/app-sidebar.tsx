@@ -14,6 +14,7 @@ import {
 import { Home, Inbox, Plus, StepBack } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from './ui/button';
+import PageRoutes from '@/routes/PageRoutes';
 
 // Menu items.
 const items = [
@@ -37,7 +38,7 @@ const footerItems = [
   },
   {
     title: 'Settings',
-    url: '#',
+    url: PageRoutes.settings,
     icon: Inbox,
   },
 ];

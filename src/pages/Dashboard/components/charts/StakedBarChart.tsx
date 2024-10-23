@@ -1,5 +1,3 @@
-'use client';
-
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowLeftIcon, Calendar, Info } from 'lucide-react';
 import {
@@ -29,7 +27,10 @@ const departments = [
   { name: 'Operations', color: '#C5C5C5' },
 ];
 
-const total = departments.reduce((sum, dept) => sum + data[0][dept.name], 0);
+const total = departments.reduce(
+  (sum, dept) => sum + data[0][dept.name as keyof (typeof data)[0]],
+  0
+);
 
 export default function StackedBarComponent() {
   return (
@@ -94,7 +95,9 @@ export default function StackedBarComponent() {
               ></div>
               <span className='text-sm'>
                 {dept.name}{' '}
-                <span className='font-medium'>{data[0][dept.name]}</span>
+                <span className='font-medium'>
+                  {data[0][dept.name as keyof (typeof data)[0]]}
+                </span>
               </span>
             </div>
           ))}
